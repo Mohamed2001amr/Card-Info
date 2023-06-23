@@ -83,7 +83,7 @@ body {
 }
 
 .setting-box .option-box .colors-list li:first-child {
-  background-color: #00d2d2;
+  background-color: #00ffff;
 }
 
 .setting-box .option-box .colors-list li:nth-child(2) {
@@ -374,17 +374,15 @@ body {
     display: block;
     text-align: center;
   }
+
+  .about-us .info-box {
+    padding: 0;
+  }
 }
 
 .about-us .info-box {
   flex: 1;
   padding: 30px;
-}
-
-@media (max-width: 767px) {
-  .about-us .info-box {
-    padding: 0;
-  }
 }
 
 .about-us .info-box h2 {
@@ -398,6 +396,13 @@ body {
   line-height: 1.7;
   color: #767676;
   margin: 0;
+  font-size: 20px;
+}
+
+.about-us .info-box li{
+  color: #f00;
+  font-weight: bolder;
+  font-size: 18px;
 }
 
 .about-us .img-box {
@@ -474,7 +479,7 @@ body {
 }
 /* end our skills */
 
-/* start gallery */
+/* start My Certificate */
 .gallery {
   padding-top: 50px;
   padding-bottom: 50px;
@@ -551,7 +556,7 @@ body {
   cursor: pointer;
   font-family: Arial, Tahoma;
 }
-/* end gallery */
+/* end My Certificate */
 
 /* Start Time Line */
 .timeline {
@@ -697,6 +702,11 @@ body {
 .features {
   padding-top: 80px;
   padding-bottom: 80px;
+}
+
+.features .container{
+  justify-content: center;
+  display: flex;
 }
 
 .features h2 {
@@ -873,72 +883,9 @@ body {
   margin: auto;
 }
 
-.contact form .left {
-  float: left;
-  width: 49%;
-}
-
-.contact form .right {
-  float: right;
-  width: 49%;
-}
-
-@media (max-width: 767px) {
-  .contact form .left,
-  .contact form .right {
-    float: none;
-    width: 100%;
-  }
-}
-
-.contact form input:not([type="submit"]),
-.contact form textarea {
-  display: block;
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 15px;
-  border: 1px solid #ccc;
-  background-color: rgba(218, 218, 218, 1);
-}
-
-.contact form input:not([type="submit"]):focus,
-.contact form textarea:focus {
-  outline: 1px solid var(--main-color);
-}
-
-.contact form input {
-  height: 40px;
-}
-
-.contact form textarea {
-  height: 150px;
-}
-
-.contact form input[type="submit"] {
-  padding: 10px;
-  width: 100%;
-  border-color: transparent;
-  background-color: var(--main-color);
-  cursor: pointer;
-  color: #fff;
-}
-
-.contact form textarea:focus::-webkit-input-placeholder,
-.contact form input:not([type="submit"]):focus::-webkit-input-placeholder {
-  opacity: 0;
-  transition: 0.3s;
-}
-
-.contact form textarea:focus::-ms-input-placeholder,
-.contact form input:not([type="submit"]):focus::-ms-input-placeholder {
-  opacity: 0;
-  transition: 0.3s;
-}
-
-.contact form textarea:focus::placeholder,
-.contact form input:not([type="submit"]):focus::placeholder {
-  opacity: 0;
-  transition: 0.3s;
+.contact form .icons{
+  display: flex;
+  justify-content: center;
 }
 
 .contact .icons ul {
